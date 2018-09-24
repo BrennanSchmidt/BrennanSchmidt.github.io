@@ -1,0 +1,83 @@
+/* CSS Document */
+
+/* ====================
+
+BASIC STRUCTURE
+
+======================*/
+
+#wrapper {
+	width: 960px;
+	padding: 5px;
+	margin: 20px auto;
+}
+
+#header {
+	height:100px;
+}
+
+#sidebar {
+	float: left;
+	width: 300px;
+}
+
+#content {
+	float: right;
+	width: 600px;
+}
+
+#footer {
+	clear: both;
+}
+
+/* ====================
+
+COLORS & FONTS
+	color.adobe.com
+======================*/
+body {
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color: #8900C9;
+	background-color: black;
+}
+
+#header, #sidebar, #content, #footer {	
+	background-color:rgba(255,255,255,0.80);
+	margin-bottom: 4px;
+	border: double;
+	border-radius: 8px;
+	border-color: grey;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+/* ====================
+
+RESPONSIVE
+	
+======================*/
+@media screen and (max-width: 980px) {
+}
+
+@media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 480px) {	
+}
+
+/* ====================
+
+PHONES
+	
+======================*/
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px) {
+		
+}
+
+
+
+
+
+
