@@ -37,6 +37,7 @@
 		
 		//guess
 		var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+		guess = guess.toLowerCase();
 		if(guess === null) {
 			//exit loop
 			break;
