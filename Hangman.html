@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h1>Hangman!</h1>
+	
+	<script>
+	//Create words of array.
+	var words = [
+		"bigboi",
+		"neck",
+		"egg",
+		"fortnite",
+		"ramen",
+		"bad"
+	];
+		
+	//random word
+	var word = words[Math.floor(Math.random() * words.length)];
+		
+	//answers
+	var answerArray = [];
+	for (var i = 0; i < word.length; i++) {
+		answerArray[i] = "_";
+	}
+	
+	var remainingLetters = word.length;
+		
+	//loop
+	while (remainingLetters > 0) {
+		//progress
+		alert(answerArray.join(" "));
+		
+		//guess
+		var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+		if(guess === null) {
+			//exit loop
+			break;
+		}	else if (guess.length !== 1) {
+			alert("Please enter a single letter.");
+		}	else {}
+			//update game
+			for (var j = 0; j < word.length; j++) {
+				if (word[j] === guess) {
+					answerArray[j] = guess;
+					remainingLetters--;
+				}
+			}
+	
+		//the end of loop
+	}
+		//show answer
+		alert(answerArray.join(" "));
+		alert("Good job! The answer was " + word);
+		
+	</script>
+</body>
+</html>
