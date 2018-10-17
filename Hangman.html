@@ -43,16 +43,16 @@
 			break;
 		}	else if (guess.length !== 1) {
 			alert("Please enter a single letter.");
-		}	else {}
+		}	else {
 			//update game
 			for (var j = 0; j < word.length; j++) {
 				if (word[j] === guess) {
 					answerArray[j] = guess;
 					remainingLetters--;
 				}
+				
+				}
 			}
-	
-		//the end of loop
 	}
 		//show answer
 		alert(answerArray.join(" "));
